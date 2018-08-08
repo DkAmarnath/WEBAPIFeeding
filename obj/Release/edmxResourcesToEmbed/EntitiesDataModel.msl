@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="USERSModelStoreContainer" CdmEntityContainer="USERSEntities">
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="USERSModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="USERSModel.Login">
+        <MappingFragment StoreEntitySet="Logins">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="USERSModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderItems">
+      <EntityTypeMapping TypeName="USERSModel.OrderItem">
+        <MappingFragment StoreEntitySet="OrderItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="USERSModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Package" ColumnName="Package" />
+          <ScalarProperty Name="IsDiscontinued" ColumnName="IsDiscontinued" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role_Master">
+      <EntityTypeMapping TypeName="USERSModel.Role_Master">
+        <MappingFragment StoreEntitySet="Role_Master">
+          <ScalarProperty Name="Roleid" ColumnName="Roleid" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="USERSModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="ContactTitle" ColumnName="ContactTitle" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserProfiles">
+      <EntityTypeMapping TypeName="USERSModel.UserProfile">
+        <MappingFragment StoreEntitySet="UserProfile">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="USERSModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Userid" ColumnName="Userid" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Roleid" ColumnName="Roleid" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Proc_UserLogin" FunctionName="USERSModel.Store.Proc_UserLogin" />
+  </EntityContainerMapping>
+</Mapping>

@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using WebApiFeeding.Models;
 
+
 namespace WebApiFeeding.Controllers
 {
     //[Authorize]
@@ -41,7 +42,8 @@ namespace WebApiFeeding.Controllers
         public string GetUsers(string username,string password)
         {
             var st = UsersRepository.GetAllEmployees(username, password);
-            return  st;
+           // var query = dataContext.Proc_UserLogin(username, password).ToList();
+            return  "dddfd";
         }
     }
 }

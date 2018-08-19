@@ -11,6 +11,13 @@ namespace WebApiFeeding.Controllers
 {
     public class CompanyController : Controller
     {
+        public ActionResult Index()
+        {
+            ViewBag.Title = "Home Page";
+
+            return View();
+        }
+
         //    //// GET: Company
         //    //public ActionResult Index()
         //    //{

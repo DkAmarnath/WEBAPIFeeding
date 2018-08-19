@@ -28,9 +28,9 @@ namespace WebApiFeeding.Models
             string username {get;set;}
             int userid{get;set;}
         }
-        public static List<users> GetAllEmployees(string username, string password)
-        {
-            List<users> u=new List<users>() ;
+      //  public static List<users> GetAllEmployees(string username, string password)
+       // {
+         //   List<users> u=new List<users>() ;
             //dataContext.Customers
             // users u1  =(dataContext.Proc_UserLogin(username, password));
             //if (query[0].ToString().Count()>0)
@@ -45,9 +45,9 @@ namespace WebApiFeeding.Models
            // var response=ne.CreateResponse(HttpStatusCode.OK,"Hello AMarnath");
             //return Json(b);
            // return Json(b, JsonRequestBehavior.AllowGet);
-            var b = dataContext.getUserDetails(username, password);
-            return u;
+            //var b = dataContext.getUserDetails(username, password);
             //return u;
-        }
+            //return u;
+        //}
     }
 }

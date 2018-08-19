@@ -38,12 +38,12 @@ namespace WebApiFeeding.Controllers
         public void Delete(int id)
         {
         }
-        [Route("api/values/getusers/{username}/{password}")]
-        public string GetUsers(string username,string password)
-        {
-            var st = UsersRepository.GetAllEmployees(username, password);
-           // var query = dataContext.Proc_UserLogin(username, password).ToList();
-            return  "dddfd";
-        }
+        //[Route("api/values/getusers/{username}/{password}")]
+        //public string GetUsers(string username,string password)
+        //{
+        //    //var st = UsersRepository.GetAllEmployees(username, password);
+        //   // var query = dataContext.Proc_UserLogin(username, password).ToList();
+        //   // return  "dddfd";
+        //}
     }
 }
